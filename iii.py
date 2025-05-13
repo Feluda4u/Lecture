@@ -7,6 +7,11 @@ import re
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+# Configuration
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+SESSION_STRING = os.getenv("SESSION_STRING")
+BASE_DIR = "CLASSPLUS"
 MAX_LINKS = 15
 BASE_DIR = "/sdcard/IIT"
 MAX_PARTS = 10000
